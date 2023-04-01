@@ -1,23 +1,25 @@
 # Whatsapp_analysis
 
-![daily](https://user-images.githubusercontent.com/84750731/228923580-a620039c-88ab-483a-b54a-288265482f68.jpg)
+![daily](https://user-images.githubusercontent.com/84750731/229315497-51574c3b-c4d2-46ee-a7bf-d44b4010eb55.jpg)
 
-![Unknown-word_count](https://user-images.githubusercontent.com/84750731/228923565-1fa8e0bc-9aa2-483e-a345-f8b8c124271a.jpg)
+![weekly](https://user-images.githubusercontent.com/84750731/229315496-520579f7-7869-43f2-b66b-297aa495f0fb.jpg)
 
+![Mes_Hour_Season](https://user-images.githubusercontent.com/84750731/229315492-ccb55f20-bbf1-4ac7-97c9-e54e4f5d06a5.png)
 
+![Unkonwn-word_count](https://user-images.githubusercontent.com/84750731/229315490-76f6e3b7-c96d-4af5-be3d-bb800b8c8f7b.jpg)
 
-![lexicon](https://user-images.githubusercontent.com/84750731/228923576-ab3f6b9f-794d-4dab-9416-c87e59fe08e5.jpg)
-
-![Unknown-count_emoji](https://user-images.githubusercontent.com/84750731/228923578-cbe34ce8-93d0-4818-9fbb-a37993c9a7b7.jpg)
-
-![Pedro Leal-count_emoji](https://user-images.githubusercontent.com/84750731/228923579-3bef016b-3431-433e-a4e9-14c8f66e60c3.jpg)
+![Pedro Leal-word_count](https://user-images.githubusercontent.com/84750731/229315491-677e3226-bb5a-4021-a8fa-69e511ffc074.jpg)
 
 
+![Unkonwn-count_emoji](https://user-images.githubusercontent.com/84750731/229315493-4a2ddaed-1193-42dc-8d3c-c10d0bd7192b.jpg)
+
+![Pedro Leal-count_emoji](https://user-images.githubusercontent.com/84750731/229315495-c2d21989-feeb-46f3-ba95-313cdcbad399.jpg)
+
+![lexicon](https://user-images.githubusercontent.com/84750731/229315489-19cf6a73-9df4-48c5-92bf-945370ca9110.jpg)
 
 
+![Unkonwn-sent_analysis_emoji](https://user-images.githubusercontent.com/84750731/229315486-e83e9f20-3ba3-4db9-a81d-e5d1fdae4ff3.jpg)
 
-![Pedro Leal-word_count](https://user-images.githubusercontent.com/84750731/228923569-bd6b9b75-fc28-4b3b-8e9f-5e156eeff932.jpg)
+![Pedro Leal-sent_analysis_emoji](https://user-images.githubusercontent.com/84750731/229315488-7a3f6824-a118-49d5-8058-aa83e7c687f6.jpg)
 
-![Unknown-sent_analysis_emoji](https://user-images.githubusercontent.com/84750731/228923572-3a031755-4453-41de-9cd8-5ea956f9986f.jpg)
 
-![Pedro Leal-sent_analysis_emoji](https://user-images.githubusercontent.com/84750731/228923574-06d73ce0-75e2-4b24-8725-8ccdea2e4a82.jpg)
