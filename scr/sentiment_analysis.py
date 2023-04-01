@@ -98,7 +98,8 @@ def emoji_analysis(df):
             title_text=f"Sentiment analysis for {name}", height=600, width=900)
 
         fig.write_image(f"../images/{name}-sent_analysis_emoji.jpg")
+        fig.show()
 
 
 df1 = df[['Name', 'Message']]
-# emoji_analysis(df1)
+emoji_analysis(df1)

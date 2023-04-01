@@ -50,7 +50,6 @@ def w_df(path):
     df = df.iloc[1:, :]
     # Reset the index of the DataFrame
     df = df.reset_index(drop=True)
-
     # Return the DataFrame
     return df
 
@@ -125,15 +124,15 @@ def weekly_messages(df, colors=None):
 
     # Set the title and axis labels
     ax.set_title('Message Counts by Day of the Week and Season')
-    ax.set_xlabel('Day of the Week')
-    ax.set_ylabel('Number of Messages')
+    ax.set_ylabel('Day of the Week')
+    ax.set_xlabel('Number of Messages')
 
     # Format the x-axis tick labels
     days = ['Monday', 'Tuesday', 'Wednesday',
             'Thursday', 'Friday', 'Saturday', 'Sunday']
     ax.set_yticks(range(len(days)))
     ax.set_yticklabels(days, rotation=0)
-
+    plt.savefig("../images/weekly.jpg")
     # Show the plot
     plt.show()
 
@@ -236,7 +235,7 @@ def plot_top_words(df):
         'estuvieses', 'estuviésemos', 'estuvieseis', 'estuviesen', 'estando', 'estado',
         'estada', 'estados', 'estadas', 'estad', 'he', 'has', 'ha', 'hemos', 'habéis',
         'han', 'haya', 'hayas', 'hayamos', 'hayáis', 'hayan', 'habré', 'habrás', 'habrá',
-        'habremos', "es", "sea", "fue", "pues", "si", "meno", "cómo", "bien",
+        'habremos', "es", "sea", "fue", "pues", "si", "meno", "cómo", "bien", "lunita",
         "solo", "igual", "bueno", "así", "mejor", "ahí", "bien", "cosas", "sé", "vez", "tan", "vas"]
 
     for name in df['Name'].unique():
@@ -302,19 +301,28 @@ def plot_lexicon(df):
 
     # Create bar plot
     fig, ax = plt.subplots(figsize=(8, 6))
-    ax.barh(list(sorted_unique_words.keys()), list(
-        sorted_unique_words.values()), color=plt.cm.tab20(range(len(sorted_unique_words))))
+    bars = ax.barh(list(sorted_unique_words.keys()), list(
+        sorted_unique_words.values()), color=plt.cm.Pastel1(range(len(sorted_unique_words))))
     ax.set_xlabel('Number of Unique Words')
     ax.set_ylabel('Name')
     ax.set_title('Number of Unique Words per Name')
+
+    # Loop through each bar and add the value at the end
+    for i, bar in enumerate(bars):
+        color = plt.cm.Set1(range(len(bars)))[i]
+        value = list(sorted_unique_words.values())[i]
+        ax.text(bar.get_width() * 9/10, bar.get_y() + bar.get_height() / 2, value,
+                ha='left', va='center', color=color)
+
     plt.savefig(f"../images/lexicon.jpg")
     plt.show()
 
 
 df = w_df('../data/WhatsApp.txt')
-# plot_messages(df)
+
 # daily_messages(df)
-# weekly_messages(df)
+# weekly_messages(df, colors=None)
 # plot_emojis(df)
+# plot_messages(df)
+# plot_top_words(df)
 # plot_lexicon(df)
-plot_top_words(df)
